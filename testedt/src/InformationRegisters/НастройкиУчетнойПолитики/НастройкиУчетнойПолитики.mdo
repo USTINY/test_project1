@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26209a56-99f1-4e79-b080-5ff9bcd445f1">
+  <producedTypes>
+    <selectionType typeId="63e4a9c7-31b6-4d48-b431-88fedf150c73" valueTypeId="5710292a-e89b-4772-8583-8751ebfd61b8"/>
+    <listType typeId="934da03f-daaa-4a01-9878-5751cb03320e" valueTypeId="f5793ee2-e411-456b-ae4f-19f4ed19258c"/>
+    <managerType typeId="6e930169-9193-4e09-a6c3-90e444d882d6" valueTypeId="ff113230-18e1-440d-bd61-cec09ffd9e24"/>
+    <recordSetType typeId="905a201c-327e-4e06-a6f2-0ca486b6d0c0" valueTypeId="582d1e4c-1ee8-49be-a143-6b2f01690c63"/>
+    <recordKeyType typeId="d95b30d2-3c06-4f8f-b0d4-b5856a209f48" valueTypeId="6c700e8b-d78b-418d-9e8f-9b9dbb2911c4"/>
+    <recordType typeId="c506fbef-4ef9-4ae8-b19e-87c6ea1631dd" valueTypeId="48db1ae8-d2ca-4b26-8fbc-9c5e2f30f908"/>
+    <recordManagerType typeId="d01c3278-10b4-4d57-aa9e-22ecfe7c3d91" valueTypeId="4e3553de-c6fe-4d7e-b0e1-5f4b561b1723"/>
+  </producedTypes>
+  <name>НастройкиУчетнойПолитики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки учетной политики</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="5aa8785e-5218-4f3e-8edb-9261f032243a">
+    <name>МетодСписанияСебестоимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод списания себестоимости</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УчетнаяПолитика</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b149f55a-f311-429c-804f-41b2ac8028b3">
+  <name>БухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бухгалтерский учет</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.БухгалтерскийУчет</picture>
+  </picture>
+  <content>Catalog.Валюты</content>
+  <content>Catalog.Номенклатура</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.ФизическиеЛица</content>
+  <content>Catalog.Подразделения</content>
+  <content>Enum.УчетнаяПолитика</content>
+  <content>Enum.ВидыНоменклатуры</content>
+  <content>InformationRegister.КурсыВалют</content>
+  <content>InformationRegister.СведенияОСотрудниках</content>
+  <content>InformationRegister.НастройкиУчетнойПолитики</content>
+  <content>ChartOfCharacteristicTypes.СвойстваОбъектов</content>
+  <content>ChartOfCharacteristicTypes.ВидыСубконто</content>
+  <content>ChartOfAccounts.Управленческий</content>
+  <content>AccountingRegister.Управленческий</content>
+  <content>Catalog.Проекты</content>
+  <content>Catalog.Склады</content>
+  <content>Document.Операция</content>
+  <content>Document.Затраты</content>
+  <content>Document.РасходнаяНакладная</content>
+  <content>Report.ПродажиБУ</content>
+</mdclass:Subsystem>

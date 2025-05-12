@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b45c5ca-2c9b-4fc4-b399-2656cab1289b">
+  <producedTypes>
+    <objectType typeId="b4361881-dc16-405c-ae35-0a06a8f2b091" valueTypeId="4a1268d7-ef4c-461f-9db9-8d6151526a47"/>
+    <refType typeId="82d1bd6e-a5fe-4610-b4e7-08424cec8489" valueTypeId="951a2951-4c25-4be6-8992-5517872afe3d"/>
+    <selectionType typeId="c1d79233-0810-4179-a8a9-43291e9c51df" valueTypeId="23dd73ce-3d23-4a8d-9fda-aa97cea07b3d"/>
+    <listType typeId="8220c057-9be5-431c-82a9-66db883f63f9" valueTypeId="bec2f5c6-6d4c-4cda-ab00-60d81d6a3ecb"/>
+    <managerType typeId="759e2622-3330-4a03-8eea-234a36ada9a3" valueTypeId="da4084ca-a2fc-418c-91c5-f269f6b3fafe"/>
+  </producedTypes>
+  <name>Затраты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Затраты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Затраты.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccountingRegister.Управленческий</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="65da16c0-f5be-412c-a2ae-4d850498b6cf">
+    <producedTypes>
+      <objectType typeId="437e40ee-c21f-47f6-9e68-bae554e8f3a4" valueTypeId="b64a5545-92b4-4dcf-a956-9dc5744191a6"/>
+      <rowType typeId="25d4ebb4-9366-475a-9d4d-94334fe14ecd" valueTypeId="a189c8d1-6a95-421d-8edd-6b262dd05b49"/>
+    </producedTypes>
+    <name>СписокПроектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список проектов</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="fc19bb3f-07ab-4ddd-b32c-bb1d664ffcd9">
+      <name>Проект</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проект</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Проекты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d02a8ec2-28e8-401f-849f-fbce1a47f8fd">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>12</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

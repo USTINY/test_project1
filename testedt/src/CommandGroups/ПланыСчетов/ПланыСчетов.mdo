@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommandGroup xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="baac333f-2c61-45d0-af28-fbf21b0fd20a">
+  <name>ПланыСчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планы счетов</value>
+  </synonym>
+  <representation>Auto</representation>
+</mdclass:CommandGroup>

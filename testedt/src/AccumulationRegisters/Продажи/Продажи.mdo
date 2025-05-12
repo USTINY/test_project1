@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63c44acc-fdbf-43ca-9434-58fb4feb2fb4">
+  <producedTypes>
+    <selectionType typeId="7596d04d-5005-448f-b1b6-f8dbef6d54fb" valueTypeId="2bab10cc-d898-47dc-8f40-813b661a75c8"/>
+    <listType typeId="a06c1c30-a621-4baf-985d-5044c4c6b015" valueTypeId="42d0a9d9-5f5f-4768-a79d-e3ef96fa6857"/>
+    <managerType typeId="42ff96d7-1a2e-451d-8ada-abdc92d16fc8" valueTypeId="53883e65-92dc-4f93-90e0-7ee57928a296"/>
+    <recordSetType typeId="70ba116a-d841-4b05-9f82-3bbd082b9c8d" valueTypeId="82fafcab-4c93-48f6-815e-b24b8f9e17e8"/>
+    <recordKeyType typeId="87ee6c67-0129-45a6-9fe4-0b87fe5c5e70" valueTypeId="af43ce7b-d970-4345-b1cc-ee9aa5c39558"/>
+    <recordType typeId="947ebb79-379a-40dd-809c-0e505e5f1924" valueTypeId="038a9b89-86a0-4fcc-8dd0-146e4195aab7"/>
+  </producedTypes>
+  <name>Продажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="ad5e0970-1452-413a-9801-32c140618a9d">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="15a3967f-63b0-4394-a825-90f7960efdf6">
+    <name>СуммаПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма продажи</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="38db5dbc-679a-4e52-b895-809488f9243b">
+    <name>Себестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Себестоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="5110d3c2-14bb-453a-925e-8f1ac1a11c07">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
